@@ -13,8 +13,14 @@
 /* Fontes */
 @font-face {
     font-family: 'Alta';
+    src: url('/fontes/AnticDidone-Regular.ttf') format('truetype');
+}
+/*
+@font-face {
+    font-family: 'Alta';
     src: url('/fontes/alta-regular.otf') format('opentype');
 }
+*/
 
 @font-face {
     font-family: 'Montserrat';
@@ -41,6 +47,42 @@ button{
 img {
     user-select: none;
     -webkit-user-drag: none;
+}
+
+/* Animações */
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.item-info:nth-child(2){
+    transition-delay: 0.25s;
+}
+
+.item-info:nth-child(3){
+    transition-delay: 0.50s;
+}
+
+.item-info:nth-child(4){
+    transition-delay: 0.75s;
+}
+
+.item-info:nth-child(5){
+    transition-delay: 1s;
+}
+
+.item-info:nth-child(6){
+    transition-delay: 1.25s;
 }
 
 /* Whatsapp flutuante */
@@ -90,7 +132,7 @@ nav{
 }
 
 .logo img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .nav-list{
@@ -101,9 +143,8 @@ nav{
 
 .nav-list a{
     padding-block: 15px;
-    font-weight: 600;
     transition: 300ms;
-    
+    font-weight: 500;
 }
 
 .roxo{
@@ -111,7 +152,8 @@ nav{
 }
 
 .roxo:hover{
-    font-size: 10px;
+    transform: scale(1.05);
+    color: var(--preto);
 }
 
 .nav-orç{
@@ -263,7 +305,7 @@ footer{
 }
 
 .footer-h3{
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     color: var(--azul);
 
@@ -303,7 +345,7 @@ footer{
 }
 
 .footer-copy:hover{
-    color: var(--verde);
+    color: var(--preto);
 }
 
 .footer-redes-sociais{
