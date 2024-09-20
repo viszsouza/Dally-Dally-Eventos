@@ -1,0 +1,111 @@
+@import url('base.css');
+
+.sobre{
+    background-color: var(--azul);
+    padding: 40px 20px;
+}
+
+.container-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container-img img{
+    max-width: 500px;
+}
+
+.container-textos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-textos h1{
+    color: var(--bege);
+    font-size: 36px;
+    font-family: "Alta",sans-serif;
+    max-width: 700px;
+}
+
+.container-textos p{
+    color: var(--bege);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    max-width: 700px;
+
+    text-align: justify;
+}
+
+.container-baixo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    margin-top: 40px;
+}
+
+.container-baixo p{
+    color: var(--bege);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    max-width: 700px;
+
+    text-align: center;
+}
+
+.container-instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-instagram img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.instagram-textos h1{
+    color: var(--bege);
+    font-size: 24px;
+    font-family: "Alta",sans-serif;
+}
+
+.instagram-textos p{
+    color: var(--bege);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 17px;
+    text-align: start;
+}
+
+/* Media para Dispositivos Móveis */
+@media (min-width: 751px) and (max-width: 1024px) {
+    .container-sobre{
+        flex-direction: column;
+    }
+
+    .container-baixo p{
+        text-align: justify;
+    }
+}
+
+/* Media para iPads & tablets */
+@media (max-width: 750px) {
+    .container-sobre{
+        flex-direction: column;
+    }
+
+    .container-baixo p{
+        text-align: justify;
+    }
+
+    .container-img img{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,92 @@
+@import url('base.css');
+
+.serviços{
+    background-color: var(--azul);
+    padding: 40px 20px;
+}
+
+.titulo h1{
+    color: var(--bege);
+    text-align: center;
+    font-size: 36px;
+    font-family: "Alta",sans-serif;
+
+    margin-bottom: 40px;
+}
+
+.container-serviços{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 1050px;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+}
+
+.container-item-vazado{
+    border: 3px solid var(--bege);
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    width: 300px;
+    height: 300px;
+
+}
+
+.container-item-vazado h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight: 700;
+    color: var(--bege);
+}
+
+.container-item-vazado p{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--bege);
+}
+
+.container-item-cheio{
+    background-color: var(--bege);
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    width: 300px;
+    height: 300px;
+}
+
+.container-item-cheio h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight: 700;
+    color: var(--azul);
+}
+
+.container-item-cheio p{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--azul);
+}
+
+.container-item-vazado span{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight: 700;
+    color: var(--bege);
+}
