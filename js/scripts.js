@@ -44,3 +44,55 @@ document.querySelectorAll('.carousel-button').forEach(e => e.addEventListener('c
         behavior: 'smooth',
     });
 }));
+
+// Carrosel inicio
+// Arrays de URLs das imagens de background para cada tamanho de tela
+const desktopBackgrounds = [
+    '/images/FotoInicioPC1.jpg',
+    '/images/FotoInicioPC2.jpg',
+    '/images/FotoInicioPC3.jpg'
+];
+
+const tabletBackgrounds = [
+    '/images/FotoInicioTablet1.jpg',
+    '/images/FotoInicioTablet2.png',
+    '/images/FotoInicioTablet3.png'
+];
+
+const mobileBackgrounds = [
+    '/images/FotoInicioSmart1.jpg',
+    '/images/FotoInicioSmart2.png',
+    '/images/FotoInicioSmart3.png'
+];
+
+let currentIndexInicio = 0;
+const backgroundContainer = document.querySelector('.inicio');
+
+// Função para verificar o tamanho da janela e escolher o conjunto de imagens correto
+function getBackgroundImages() {
+    const width = window.innerWidth;
+
+    if (width > 1024) {
+        return desktopBackgrounds; // Para telas maiores que 1024px (desktop)
+    } else if (width >= 751 && width <= 1024) {
+        return tabletBackgrounds;  // Para telas entre 768px e 1024px (tablet)
+    } else {
+        return mobileBackgrounds;  // Para telas menores que 768px (mobile)
+    }
+}
+
+// Função para alterar o background-image a cada 3 segundos
+function changeBackground() {
+    const images = getBackgroundImages(); // Obtém o conjunto de imagens de acordo com o tamanho da tela
+
+    currentIndexInicio = (currentIndexInicio + 1) % images.length; // Altera o índice e faz o loop
+
+    // Atualiza o background-image do container
+    backgroundContainer.style.backgroundImage = `url(${images[currentIndexInicio]})`;
+}
+
+// Define o intervalo para trocar o background a cada 3 segundos
+setInterval(changeBackground, 3000);
+
+// Inicializa com o primeiro background
+changeBackground();

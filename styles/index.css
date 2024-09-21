@@ -414,7 +414,7 @@
     transform: scale(1.05);
 }
 
-/* Media para Dispositivos Móveis */
+/* Media para iPads & tablets */
 @media (min-width: 751px) and (max-width: 1024px) {
     .inicio{
         background-image: url('/images/FotoInicioTablet.jpg');
@@ -465,7 +465,7 @@
     }
 }
 
-/* Media para iPads & tablets */
+/* Media para Dispositivos Móveis */
 @media (max-width: 750px) {
     .inicio{
         background-image: url('/images/FotoInicioSmart.jpg');

@@ -48,7 +48,7 @@
 }
 
 .container-item-vazado p{
-    text-align: justify;
+    text-align: start;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: 500;
@@ -76,7 +76,7 @@
 }
 
 .container-item-cheio p{
-    text-align: justify;
+    text-align: start;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: 500;

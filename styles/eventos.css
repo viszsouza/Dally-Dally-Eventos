@@ -1,0 +1,70 @@
+@import url('base.css');
+
+.eventos {
+    background-color: var(--azul);
+    padding: 40px 20px;
+}
+
+.container-textos-eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-textos-eventos h1 {
+    font-family: 'Alta';
+    color: var(--bege);
+    font-size: 36px;
+}
+
+.container-textos-eventos p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--bege);
+    margin-bottom: 40px;
+}
+
+.container-eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 1050px;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+}
+
+.container-item-eventos {
+    background-color: var(--bege);
+    width: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.container-item-eventos img{
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.container-item-textos{
+    padding: 20px;
+    background-color: var(--bege);
+}
+
+.container-item-textos p{
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--azul);
+}
