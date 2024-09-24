@@ -88,6 +88,13 @@
 
 .buttons-cursos{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.buttons-cursos a{
+    width: 100%;
 }
 
 .buttons-cursos button{
