@@ -1,0 +1,135 @@
+@import url('base.css');
+
+.cursos{
+    background-color: var(--azul);
+    padding: 40px 20px;
+}
+
+.container-curso{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container-curso:nth-child(2){
+    margin-top: 60px;
+}
+
+.container-curso h1{
+    text-align: center;
+    font-family: 'Alta';
+    color: var(--bege);
+    font-size: 36px;
+}
+
+.container-curso-img{
+    max-width: 1000px;
+    height: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    align-items: center;
+}
+
+.container-curso-img img{
+    width: 100%;
+}
+
+.container-curso-textos{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.container-curso-textos-topicos{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-curso-textos-topicos h1{
+    text-align: start;
+    font-family: 'Alta';
+    font-weight: normal;
+    color: var(--bege);
+    font-size: 26px;
+}
+
+.container-curso-textos-topicos li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--bege);
+}
+
+.container-curso-textos-topicos p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--bege);
+}
+
+.container-curso-textos-topicos span{
+    font-family: 'Alta', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--bege);
+}
+
+.buttons-cursos{
+    width: 100%;
+}
+
+.buttons-cursos button{
+    background-color: var(--bege);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+
+    color: var(--azul);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+
+    transition: 300ms;
+    box-shadow: var(--shadow);
+}
+
+.buttons-cursos button:hover{
+    background-color: var(--branco);
+    transform: scale(1.05);
+}
+
+/* Media para iPads & tablets */
+@media (min-width: 751px) and (max-width: 1024px){
+    .container-curso-textos{
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .container-curso-textos-topicos{
+        width: 100%;
+    }
+}
+
+/* Media para Dispositivos Móveis */
+@media (max-width: 750px){
+    .container-curso-textos{
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .container-curso-textos-topicos{
+        width: 100%;
+    }
+}
