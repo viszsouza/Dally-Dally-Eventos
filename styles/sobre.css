@@ -101,8 +101,12 @@
         flex-direction: column;
     }
 
+    .container-textos p{
+        text-align: start;
+    }
+
     .container-baixo p{
-        text-align: justify;
+        text-align: start;
     }
 
     .container-img img{

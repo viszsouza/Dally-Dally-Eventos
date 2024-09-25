@@ -50,19 +50,22 @@ document.querySelectorAll('.carousel-button').forEach(e => e.addEventListener('c
 const desktopBackgrounds = [
     '/images/FotoInicioPC1.jpg',
     '/images/FotoInicioPC2.jpg',
-    '/images/FotoInicioPC3.jpg'
+    '/images/FotoInicioPC3.jpg',
+    '/images/FotoInicioPC4.jpg'
 ];
 
 const tabletBackgrounds = [
     '/images/FotoInicioTablet1.jpg',
     '/images/FotoInicioTablet2.png',
-    '/images/FotoInicioTablet3.png'
+    '/images/FotoInicioTablet3.png',
+    '/images/FotoInicioTablet4.jpg'
 ];
 
 const mobileBackgrounds = [
     '/images/FotoInicioSmart1.jpg',
-    '/images/FotoInicioSmart2.png',
-    '/images/FotoInicioSmart3.png'
+    '/images/FotoInicioSmart2.jpg',
+    '/images/FotoInicioSmart3.jpg',
+    '/images/FotoInicioSmart4.jpg'
 ];
 
 let currentIndexInicio = 0;

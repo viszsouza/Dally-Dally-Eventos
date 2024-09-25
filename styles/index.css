@@ -396,6 +396,14 @@
         flex-direction: column;
     }
 
+    .container-item-motivo span{
+        text-align: center;
+    }
+    
+    .container-item-motivo p{
+        text-align: center;
+    }
+
     .container-info{
         grid-template-columns: auto auto;
     }
@@ -445,6 +453,14 @@
 
     .container-motivo-2{
         flex-direction: column;
+    }
+
+    .container-item-motivo span{
+        text-align: center;
+    }
+    
+    .container-item-motivo p{
+        text-align: center;
     }
 
     .container-info{
