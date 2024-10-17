@@ -48,24 +48,36 @@ document.querySelectorAll('.carousel-button').forEach(e => e.addEventListener('c
 // Carrosel inicio
 // Arrays de URLs das imagens de background para cada tamanho de tela
 const desktopBackgrounds = [
-    '/images/FotoInicioPC1.jpg',
-    '/images/FotoInicioPC2.jpg',
-    '/images/FotoInicioPC3.jpg',
-    '/images/FotoInicioPC4.jpg'
+    '/images/FotoInicioPC1.png',
+    '/images/FotoInicioPC2.png',
+    '/images/FotoInicioPC3.png',
+    '/images/FotoInicioPC4.png',
+    '/images/FotoInicioPC5.png',
+    '/images/FotoInicioPC6.png',
+    '/images/FotoInicioPC7.png',
+    '/images/FotoInicioPC8.png'
 ];
 
 const tabletBackgrounds = [
-    '/images/FotoInicioTablet1.jpg',
+    '/images/FotoInicioTablet1.png',
     '/images/FotoInicioTablet2.png',
     '/images/FotoInicioTablet3.png',
-    '/images/FotoInicioTablet4.jpg'
+    '/images/FotoInicioTablet4.png',
+    '/images/FotoInicioTablet5.png',
+    '/images/FotoInicioTablet6.png',
+    '/images/FotoInicioTablet7.png',
+    '/images/FotoInicioTablet8.png'
 ];
 
 const mobileBackgrounds = [
-    '/images/FotoInicioSmart1.jpg',
-    '/images/FotoInicioSmart2.jpg',
-    '/images/FotoInicioSmart3.jpg',
-    '/images/FotoInicioSmart4.jpg'
+    '/images/FotoInicioSmart1.png',
+    '/images/FotoInicioSmart2.png',
+    '/images/FotoInicioSmart3.png',
+    '/images/FotoInicioSmart4.png',
+    '/images/FotoInicioSmart5.png',
+    '/images/FotoInicioSmart6.png',
+    '/images/FotoInicioSmart7.png',
+    '/images/FotoInicioSmart8.png'
 ];
 
 let currentIndexInicio = 0;
